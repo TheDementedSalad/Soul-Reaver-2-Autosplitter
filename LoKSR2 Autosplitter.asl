@@ -139,7 +139,7 @@ split
 		}
 	
 		if(current.Cutscene == 4 && current.Reavers == 60 && current.X >= 2440f && current.X <= 2450f && current.Y >= -10803f && current.Y <= -10795f && current.Z >= -2780f && current.Z <= -2770f && vars.split == 0){
-			if(settings["16"]){
+			if(settings["8"]){
 				vars.split++;
 				return true;
 			}
