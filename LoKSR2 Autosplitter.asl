@@ -110,7 +110,7 @@ startup
 
 isLoading 
 {
-	if(current.Paused == 1 || current.gameState == 6){
+	if(current.Paused == 1 || current.gameState == 6 || current.gameState == 2){
 		return true;
 	}
 	else{
@@ -160,7 +160,7 @@ split
 
 reset
 {
-	if(current.gameState == 2 && old.gameState == 6 && current.Level == "strong1A"){
+	if(current.gameState == 1 && old.gameState == 2 && current.Level == "strong1A"){
 		return true;
 	}
 }
