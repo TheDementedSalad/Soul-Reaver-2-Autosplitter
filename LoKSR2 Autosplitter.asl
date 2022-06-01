@@ -131,8 +131,8 @@ split
 	if(settings["Gless"]){
 		for(int i = 0; i <= 70; i += 2){
 			if(current.Cutscene == 4 && current.X > vars.GXCoords[i] && current.X < vars.GXCoords[i + 1] && current.Y > vars.GYCoords[i] && current.Y < vars.GYCoords[i + 1] && current.Z > vars.GZCoords[i] && current.Z < vars.GZCoords[i + 1]){
-				if(settings["" + i] && !vars.completedSplits.Contains(vars.XCoords[i])){
-					vars.completedSplits.Add(vars.XCoords[i]);
+				if(settings["" + i] && !vars.completedSplits.Contains(vars.GXCoords[i])){
+					vars.completedSplits.Add(vars.GXCoords[i]);
 					return true;
 				}
 			}
