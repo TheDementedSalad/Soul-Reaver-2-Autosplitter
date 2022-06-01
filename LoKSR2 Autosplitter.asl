@@ -160,7 +160,7 @@ split
 
 reset
 {
-	if(current.gameState == 1 && old.gameState == 6 && current.Level == "strong1A"){
+	if(current.gameState == 2 && old.gameState == 6 && current.Level == "strong1A"){
 		return true;
 	}
 }
